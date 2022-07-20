@@ -33,9 +33,9 @@ class Cell():
         self.flag_placed = False
         self.near_mines = 0
 
-        toal_y = (canvas_height - field_y_size * self.cell_size) / 2 + y * self.cell_size
+        total_y = (canvas_height - field_y_size * self.cell_size) / 2 + y * self.cell_size
         total_x = (canvas_width - field_x_size * self.cell_size) / 2 + x * self.cell_size
-        self.cell = self.canvas.create_rectangle(total_x, toal_y, total_x + self.cell_size, toal_y + self.cell_size, fill='#%02x%02x%02x' % (200, 200, 200))
+        self.cell = self.canvas.create_rectangle(total_x, total_y, total_x + self.cell_size, total_y + self.cell_size, fill='#%02x%02x%02x' % (200, 200, 200))
 
 def check_win():
     win = True
